@@ -199,36 +199,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        const toggleLabel = document.querySelector('label[for="menu-toggle"]');
-
-        menuToggle.addEventListener('change', function() {
-            if (this.checked) {
-                navMenu.classList.add('active');
-                toggleLabel.classList.add('active');
-            } else {
-                navMenu.classList.remove('active');
-                toggleLabel.classList.remove('active');
-            }
-        });
-
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                menuToggle.checked = false;
-                navMenu.classList.remove('active');
-                toggleLabel.classList.remove('active');
-            });
-        });
-
-        // Form submission (non-functional as per requirements)
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-        });
-    </script>
 </body>
 </html>
 
