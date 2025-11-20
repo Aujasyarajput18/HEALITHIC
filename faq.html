@@ -2,30 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Healithic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=1100">
+    <title>Healithic - FAQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">Healithic</a>
-            <input type="checkbox" id="menu-toggle" class="mobile-menu-toggle">
-            <label for="menu-toggle" class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="nav-menu" id="nav-menu">
+            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="diagnostics.html" class="nav-link">Diagnostics</a></li>
                 <li><a href="packages.html" class="nav-link">Packages</a></li>
-                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="how-it-works.html" class="nav-link">Process</a></li>
                 <li><a href="blogs.html" class="nav-link">Blogs</a></li>
                 <li><a href="faq.html" class="nav-link active">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -33,189 +25,48 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <header class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Frequently Asked Questions</h1>
-                <p>Find answers to common questions about our services</p>
-            </div>
+            <h1>Frequently Asked Questions</h1>
+            <p>Answers to common queries.</p>
         </div>
-    </section>
+    </header>
 
-    <!-- FAQ Accordion -->
     <section class="section">
         <div class="container">
-            <div class="accordion">
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq1" class="accordion-input">
-                    <label for="faq1" class="accordion-label">How do I book a test?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            You can book a test in three easy ways: (1) Browse our diagnostics page and select the test you need, (2) Choose from our curated health packages, or (3) Contact us directly via phone or email. Once you've selected your test, you can schedule a convenient time for sample collection at home or visit our collection center.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq2" class="accordion-input">
-                    <label for="faq2" class="accordion-label">Do you provide home sample collection?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Yes, we offer convenient home sample collection services. Our trained phlebotomists will visit your preferred location at a time that suits you. Simply book your test and select the home collection option. We ensure all safety protocols and hygiene standards are strictly followed during the collection process.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq3" class="accordion-input">
-                    <label for="faq3" class="accordion-label">How long does it take to get test results?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Most routine tests are processed and reports are available within 24-48 hours. Some specialized tests may take up to 72 hours. Critical tests can be expedited and are available within 6-12 hours. You'll receive an email notification as soon as your reports are ready, and you can access them through our secure online portal.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq4" class="accordion-input">
-                    <label for="faq4" class="accordion-label">Are your laboratories certified?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Yes, all our partner laboratories are NABL (National Accreditation Board for Testing and Calibration Laboratories) certified. We also maintain ISO 15189 standards and other international quality certifications. This ensures the highest accuracy and reliability of all test results.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq5" class="accordion-input">
-                    <label for="faq5" class="accordion-label">Do I need to fast before my test?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Fasting requirements depend on the specific test you're taking. Tests like lipid profile, blood sugar, and comprehensive health packages typically require 12 hours of fasting (water is allowed). However, many tests like CBC, thyroid function, and vitamin tests don't require fasting. Detailed preparation instructions are provided when you book a test.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq6" class="accordion-input">
-                    <label for="faq6" class="accordion-label">How do I access my test reports?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Once your test results are ready, you'll receive an email notification with a secure link to access your reports. You can log in to our online portal using your registered email and password. Reports are available in PDF format and can be downloaded, printed, or shared with your healthcare provider. You can also access your test history anytime through your account.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq7" class="accordion-input">
-                    <label for="faq7" class="accordion-label">Can I consult with a doctor about my results?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Yes, we offer free consultation with our experienced healthcare professionals to help you understand your test results. You can schedule a consultation after receiving your reports. Our doctors will explain what your results mean, answer any questions, and provide guidance on next steps if needed.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq8" class="accordion-input">
-                    <label for="faq8" class="accordion-label">What payment methods do you accept?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            We accept multiple payment methods including credit cards, debit cards, UPI, net banking, and cash on delivery (for home collection). You can pay online when booking your test or pay in cash when our phlebotomist visits for sample collection. All online transactions are secure and encrypted.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq9" class="accordion-input">
-                    <label for="faq9" class="accordion-label">Are health packages more cost-effective than individual tests?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Yes, our health packages offer significant savings compared to booking individual tests separately. Packages are designed to provide comprehensive health screening at discounted rates, typically saving you 20-35% compared to individual test prices. Additionally, packages ensure all related tests are done together, providing a complete health picture.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq10" class="accordion-input">
-                    <label for="faq10" class="accordion-label">Is my health information kept confidential?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Absolutely. We take patient privacy and data security very seriously. All your health information is encrypted and stored securely. We comply with HIPAA and other data protection regulations. Your test results are accessible only to you and healthcare providers you authorize. We never share your information with third parties without your explicit consent.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq11" class="accordion-input">
-                    <label for="faq11" class="accordion-label">Can I cancel or reschedule my test appointment?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            Yes, you can cancel or reschedule your appointment up to 24 hours before the scheduled time. Simply contact us via phone or email, or use the online portal to manage your appointments. Cancellations made within 24 hours may be subject to a cancellation fee. Refunds for prepaid tests will be processed according to our refund policy.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="faq12" class="accordion-input">
-                    <label for="faq12" class="accordion-label">What should I do if I have abnormal test results?</label>
-                    <div class="accordion-content">
-                        <div class="accordion-text">
-                            If your test results show any abnormal values, don't panic. Many factors can influence test results. We recommend scheduling a consultation with our healthcare professionals or your primary care physician. They can help interpret the results in context, consider your medical history, and recommend appropriate follow-up tests or treatments if needed.
-                        </div>
-                    </div>
-                </div>
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>How do I book a test?</h3>
+                <p>You can browse our diagnostics page, select a test, or contact us directly via phone or email.</p>
             </div>
 
-            <!-- Still Have Questions -->
-            <div style="text-align: center; margin-top: 4rem; padding: 3rem; background-color: var(--warm-gray); border-radius: var(--border-radius);">
-                <h3 style="margin-bottom: 1rem;">Still Have Questions?</h3>
-                <p style="margin-bottom: 2rem; font-size: 1.1rem;">Our team is here to help. Get in touch with us and we'll be happy to assist you.</p>
-                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>Do you provide home collection?</h3>
+                <p>Yes, we offer home sample collection services. A trained phlebotomist will visit your location.</p>
             </div>
+
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>When will I get results?</h3>
+                <p>Most routine test reports are available within 24-48 hours. Critical tests may be faster.</p>
+            </div>
+
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>Are your labs certified?</h3>
+                <p>Yes, all our partner laboratories are NABL certified and follow strict quality standards.</p>
+            </div>
+
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>Do I need to fast?</h3>
+                <p>It depends on the test. Lipid profiles and sugar tests usually require 12 hours of fasting.</p>
+            </div>
+
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Healithic</h4>
-                    <p>Your trusted partner in health and wellness. We provide accurate diagnostics and comprehensive health solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="diagnostics.html">Diagnostics</a></li>
-                        <li><a href="packages.html">Health Packages</a></li>
-                        <li><a href="how-it-works.html">How It Works</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📧 info@healithic.com</li>
-                        <li>📞 +91 9528280000</li>
-                        <li>📍 AIIMS DELHI</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Healithic. All rights reserved.</p>
-            </div>
+        <div class="container text-center">
+            &copy; 2025 Healithic.
         </div>
     </footer>
+
 </body>
 </html>
-

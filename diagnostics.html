@@ -2,30 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnostics - Healithic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=1100">
+    <title>Healithic - Diagnostics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">Healithic</a>
-            <input type="checkbox" id="menu-toggle" class="mobile-menu-toggle">
-            <label for="menu-toggle" class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="nav-menu" id="nav-menu">
+            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="diagnostics.html" class="nav-link active">Diagnostics</a></li>
                 <li><a href="packages.html" class="nav-link">Packages</a></li>
-                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="how-it-works.html" class="nav-link">Process</a></li>
                 <li><a href="blogs.html" class="nav-link">Blogs</a></li>
                 <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -33,162 +25,68 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <header class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Diagnostic Tests</h1>
-                <p>Comprehensive range of diagnostic tests for accurate health assessment</p>
-            </div>
+            <h1>Diagnostic Tests</h1>
+            <p>Comprehensive range of tests for accurate assessment.</p>
         </div>
-    </section>
+    </header>
 
-    <!-- Search Bar -->
-    <section class="section" style="padding-top: 40px;">
+    <section class="section">
         <div class="container">
-            <div class="search-bar">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search for tests...">
-            </div>
-        </div>
-    </section>
-
-    <!-- Tests Grid -->
-    <section class="section" style="background-color: var(--warm-gray); padding-top: 20px;">
-        <div class="container">
+            <input type="text" class="form-input" placeholder="Search for tests..." style="max-width: 400px; display: block; margin: 0 auto 40px auto;">
+            
             <div class="grid grid-3">
                 <div class="test-card">
                     <h4 class="test-card-title">Complete Blood Count (CBC)</h4>
-                    <div class="test-card-price">₹499</div>
-                    <p class="test-card-desc">Comprehensive blood analysis to check overall health and detect various disorders including anemia, infections, and blood cancers.</p>
+                    <div class="price">₹499</div>
+                    <p>Check overall health, anemia, infections, and more.</p>
                     <a href="test-details.html" class="btn btn-primary">View Details</a>
                 </div>
+                
                 <div class="test-card">
                     <h4 class="test-card-title">Lipid Profile</h4>
-                    <div class="test-card-price">₹599</div>
-                    <p class="test-card-desc">Measure cholesterol and triglyceride levels to assess heart health and risk of cardiovascular diseases.</p>
+                    <div class="price">₹599</div>
+                    <p>Measure cholesterol and triglycerides for heart health.</p>
                     <a href="test-details.html" class="btn btn-primary">View Details</a>
                 </div>
+
                 <div class="test-card">
                     <h4 class="test-card-title">Thyroid Function Test</h4>
-                    <div class="test-card-price">₹699</div>
-                    <p class="test-card-desc">Evaluate thyroid gland function including T3, T4, and TSH levels to detect thyroid disorders.</p>
+                    <div class="price">₹699</div>
+                    <p>Evaluate T3, T4, and TSH levels.</p>
                     <a href="test-details.html" class="btn btn-primary">View Details</a>
                 </div>
+
                 <div class="test-card">
                     <h4 class="test-card-title">Vitamin D Test</h4>
-                    <div class="test-card-price">₹799</div>
-                    <p class="test-card-desc">Check vitamin D levels essential for bone health, immunity, and overall well-being.</p>
+                    <div class="price">₹799</div>
+                    <p>Check levels essential for bone health.</p>
                     <a href="test-details.html" class="btn btn-primary">View Details</a>
                 </div>
+
                 <div class="test-card">
                     <h4 class="test-card-title">Diabetes Screening</h4>
-                    <div class="test-card-price">₹399</div>
-                    <p class="test-card-desc">Comprehensive diabetes screening including HbA1c, fasting glucose, and postprandial glucose levels.</p>
+                    <div class="price">₹399</div>
+                    <p>HbA1c, fasting glucose, and postprandial levels.</p>
                     <a href="test-details.html" class="btn btn-primary">View Details</a>
                 </div>
+
                 <div class="test-card">
                     <h4 class="test-card-title">Liver Function Test</h4>
-                    <div class="test-card-price">₹899</div>
-                    <p class="test-card-desc">Assess liver health through multiple parameters to detect liver diseases or damage.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Kidney Function Test</h4>
-                    <div class="test-card-price">₹699</div>
-                    <p class="test-card-desc">Evaluate kidney function through creatinine, urea, and other essential parameters.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Vitamin B12 Test</h4>
-                    <div class="test-card-price">₹899</div>
-                    <p class="test-card-desc">Check vitamin B12 levels to detect deficiency that can cause anemia and neurological issues.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Hemoglobin A1c</h4>
-                    <div class="test-card-price">₹599</div>
-                    <p class="test-card-desc">Measure average blood sugar levels over the past 2-3 months for diabetes management.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Complete Urine Analysis</h4>
-                    <div class="test-card-price">₹299</div>
-                    <p class="test-card-desc">Comprehensive urine test to detect infections, kidney problems, and other health issues.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Iron Studies</h4>
-                    <div class="test-card-price">₹799</div>
-                    <p class="test-card-desc">Evaluate iron levels in the body to diagnose anemia and iron-related disorders.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">PSA Test</h4>
-                    <div class="test-card-price">₹999</div>
-                    <p class="test-card-desc">Prostate-specific antigen test for early detection of prostate cancer in men.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">C-Reactive Protein (CRP)</h4>
-                    <div class="test-card-price">₹599</div>
-                    <p class="test-card-desc">Measure inflammation levels in the body to assess risk of cardiovascular diseases.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Calcium Test</h4>
-                    <div class="test-card-price">₹399</div>
-                    <p class="test-card-desc">Check calcium levels in blood to assess bone health and detect related disorders.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Electrolyte Panel</h4>
-                    <div class="test-card-price">₹699</div>
-                    <p class="test-card-desc">Comprehensive evaluation of sodium, potassium, chloride, and bicarbonate levels.</p>
+                    <div class="price">₹899</div>
+                    <p>Assess liver health through multiple parameters.</p>
                     <a href="test-details.html" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Healithic</h4>
-                    <p>Your trusted partner in health and wellness. We provide accurate diagnostics and comprehensive health solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="diagnostics.html">Diagnostics</a></li>
-                        <li><a href="packages.html">Health Packages</a></li>
-                        <li><a href="how-it-works.html">How It Works</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📧 info@healithic.com</li>
-                        <li>📞 +91 9528280000</li>
-                        <li>📍 AIIMS DELHI</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Healithic. All rights reserved.</p>
-            </div>
+            <p class="text-center">&copy; 2025 Healithic.</p>
         </div>
     </footer>
+
 </body>
 </html>

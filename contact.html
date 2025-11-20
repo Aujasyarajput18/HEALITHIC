@@ -2,30 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Healithic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=1100">
+    <title>Healithic - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">Healithic</a>
-            <input type="checkbox" id="menu-toggle" class="mobile-menu-toggle">
-            <label for="menu-toggle" class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="nav-menu" id="nav-menu">
+            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="diagnostics.html" class="nav-link">Diagnostics</a></li>
                 <li><a href="packages.html" class="nav-link">Packages</a></li>
-                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="how-it-works.html" class="nav-link">Process</a></li>
                 <li><a href="blogs.html" class="nav-link">Blogs</a></li>
                 <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
@@ -33,172 +25,54 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <header class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Contact Us</h1>
-                <p>We're here to help. Get in touch with us for any questions or support</p>
-            </div>
+            <h1>Contact Us</h1>
+            <p>We are here to help.</p>
         </div>
-    </section>
+    </header>
 
-    <!-- Contact Info -->
     <section class="section">
         <div class="container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <h4>Email Us</h4>
-                    <p>info@healithic.com</p>
-                    <p>support@healithic.com</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <h4>Call Us</h4>
-                    <p>+91 1800-123-4567</p>
+            <div class="grid grid-2">
+                <div>
+                    <h3>Get in Touch</h3>
+                    <p><strong>Email:</strong> info@healithic.com</p>
+                    <p><strong>Phone:</strong> +91 1800-123-4567</p>
+                    <p><strong>Address:</strong> AIIMS DELHI</p>
+                    
+                    <br>
+                    <h3>Hours</h3>
                     <p>Mon-Sat: 8 AM - 8 PM</p>
+                    <p>Sun: 10 AM - 4 PM</p>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <h4>Visit Us</h4>
-                    <p>123 Health Street</p>
-                    <p>Wellness City, 123456</p>
+
+                <div>
+                    <form class="card">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-input" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" rows="4" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <section class="section" style="background-color: var(--warm-gray);">
-        <div class="container">
-            <div class="section-title">
-                <h2>Send Us a Message</h2>
-                <p>Fill out the form below and we'll get back to you as soon as possible</p>
-            </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name" class="form-label">Full Name *</label>
-                    <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="form-label">Email Address *</label>
-                    <input type="email" id="email" class="form-input" placeholder="Enter your email address" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number">
-                </div>
-                <div class="form-group">
-                    <label for="subject" class="form-label">Subject *</label>
-                    <input type="text" id="subject" class="form-input" placeholder="What is this regarding?" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" class="form-label">Message *</label>
-                    <textarea id="message" class="form-textarea" placeholder="Tell us how we can help you..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Map Placeholder -->
-    <section class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Find Us</h2>
-            </div>
-            <div class="map-placeholder">
-                 Map Location - AIIMS DELHI
-            </div>
-        </div>
-    </section>
-
-    <!-- Additional Information -->
-    <section class="section" style="background-color: var(--warm-gray);">
-        <div class="container">
-            <div class="grid grid-3">
-                <div class="card">
-                    <div class="card-icon">🕐</div>
-                    <h4 class="card-title">Business Hours</h4>
-                    <div class="card-content">
-                        <p><strong>Monday - Saturday:</strong><br>8:00 AM - 8:00 PM</p>
-                        <p><strong>Sunday:</strong><br>10:00 AM - 4:00 PM</p>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">Emergency services available 24/7</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🚚</div>
-                    <h4 class="card-title">Home Collection</h4>
-                    <div class="card-content">
-                        <p>We provide home sample collection services across the city. Book your appointment and our trained phlebotomist will visit you at your preferred location.</p>
-                        <p style="margin-top: 1rem;"><strong>Available:</strong> 7 days a week</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💬</div>
-                    <h4 class="card-title">Quick Support</h4>
-                    <div class="card-content">
-                        <p>Need immediate assistance? Our customer support team is available to help you with:</p>
-                        <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-                            <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
-                                <span style="position: absolute; left: 0; color: var(--soft-teal);">•</span>
-                                Test bookings
-                            </li>
-                            <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
-                                <span style="position: absolute; left: 0; color: var(--soft-teal);">•</span>
-                                Report queries
-                            </li>
-                            <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
-                                <span style="position: absolute; left: 0; color: var(--soft-teal);">•</span>
-                                General inquiries
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Healithic</h4>
-                    <p>Your trusted partner in health and wellness. We provide accurate diagnostics and comprehensive health solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="diagnostics.html">Diagnostics</a></li>
-                        <li><a href="packages.html">Health Packages</a></li>
-                        <li><a href="how-it-works.html">How It Works</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📧 info@healithic.com</li>
-                        <li>📞 +91 9528280000</li>
-                        <li>AIIMS DELHI</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Healithic. All rights reserved.</p>
-            </div>
+        <div class="container text-center">
+            &copy; 2025 Healithic.
         </div>
     </footer>
+
 </body>
 </html>
-

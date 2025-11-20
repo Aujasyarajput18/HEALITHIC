@@ -2,30 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healithic - Your Trusted Health & Wellness Partner</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=1100">
+    <title>Healithic - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">Healithic</a>
-            <input type="checkbox" id="menu-toggle" class="mobile-menu-toggle">
-            <label for="menu-toggle" class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="nav-menu" id="nav-menu">
+            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="diagnostics.html" class="nav-link">Diagnostics</a></li>
                 <li><a href="packages.html" class="nav-link">Packages</a></li>
-                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="how-it-works.html" class="nav-link">Process</a></li>
                 <li><a href="blogs.html" class="nav-link">Blogs</a></li>
                 <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -34,124 +27,60 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <header class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Your Health, Our Priority</h1>
-                <p>Experience premium health diagnostics and wellness solutions with NABL-certified labs and expert care. Take control of your health journey today.</p>
-                <div class="hero-buttons">
-                    <a href="diagnostics.html" class="btn btn-primary">Book a Test</a>
-                    <a href="packages.html" class="btn btn-outline">View Packages</a>
+            <h1>Your Health, Our Priority</h1>
+            <p>Premium health diagnostics and wellness solutions with certified labs.</p>
+            <br>
+            <a href="diagnostics.html" class="btn btn-primary">Book a Test</a>
+            <a href="packages.html" class="btn btn-outline">View Packages</a>
+        </div>
+    </header>
+
+    <!-- Stats / Trust -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="grid grid-4 text-center">
+                <div>
+                    <h3>10,000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div>
+                    <h3>500+</h3>
+                    <p>Tests Available</p>
+                </div>
+                <div>
+                    <h3>50+</h3>
+                    <p>Health Packages</p>
+                </div>
+                <div>
+                    <h3>NABL</h3>
+                    <p>Certified Labs</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Indicators -->
-    <section class="trust-indicators">
-        <div class="container">
-            <div class="trust-item">
-                <span class="trust-number">10,000+</span>
-                <span class="trust-label">Happy Customers</span>
-            </div>
-            <div class="trust-item">
-                <span class="trust-number">500+</span>
-                <span class="trust-label">Tests Available</span>
-            </div>
-            <div class="trust-item">
-                <span class="trust-number">50+</span>
-                <span class="trust-label">Health Packages</span>
-            </div>
-            <div class="trust-item">
-                <span class="trust-number">NABL</span>
-                <span class="trust-label">Certified Labs</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
+    <!-- Services -->
     <section class="section">
         <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p>Comprehensive health solutions tailored to your needs</p>
-            </div>
+            <h2 class="text-center">Our Services</h2>
             <div class="grid grid-3">
                 <div class="card">
-                    <div class="card-icon">🔬</div>
-                    <h3 class="card-title">Diagnostic Tests</h3>
-                    <div class="card-content">
-                        <p>Wide range of diagnostic tests with accurate results and quick turnaround times.</p>
-                    </div>
+                    <h3>Diagnostic Tests</h3>
+                    <p>Wide range of diagnostic tests with accurate results.</p>
                     <a href="diagnostics.html" class="btn btn-outline">Explore Tests</a>
                 </div>
                 <div class="card">
-                    <div class="card-icon">📦</div>
-                    <h3 class="card-title">Health Packages</h3>
-                    <div class="card-content">
-                        <p>Curated health packages designed for comprehensive wellness screening at affordable prices.</p>
-                    </div>
+                    <h3>Health Packages</h3>
+                    <p>Curated packages for comprehensive screening.</p>
                     <a href="packages.html" class="btn btn-outline">View Packages</a>
                 </div>
                 <div class="card">
-                    <div class="card-icon">📚</div>
-                    <h3 class="card-title">Wellness Blogs</h3>
-                    <div class="card-content">
-                        <p>Expert insights, health tips, and wellness guides to help you live your best life.</p>
-                    </div>
+                    <h3>Wellness Blogs</h3>
+                    <p>Expert insights and health tips.</p>
                     <a href="blogs.html" class="btn btn-outline">Read Blogs</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Tests Section -->
-    <section class="section" style="background-color: var(--warm-gray);">
-        <div class="container">
-            <div class="section-title">
-                <h2>Featured Tests</h2>
-                <p>Popular diagnostic tests chosen by our customers</p>
-            </div>
-            <div class="grid grid-3">
-                <div class="test-card">
-                    <h4 class="test-card-title">Complete Blood Count (CBC)</h4>
-                    <div class="test-card-price">₹499</div>
-                    <p class="test-card-desc">Comprehensive blood analysis to check overall health and detect various disorders.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Lipid Profile</h4>
-                    <div class="test-card-price">₹599</div>
-                    <p class="test-card-desc">Measure cholesterol and triglyceride levels to assess heart health.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Thyroid Function Test</h4>
-                    <div class="test-card-price">₹699</div>
-                    <p class="test-card-desc">Evaluate thyroid gland function and detect thyroid disorders.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Vitamin D Test</h4>
-                    <div class="test-card-price">₹799</div>
-                    <p class="test-card-desc">Check vitamin D levels essential for bone health and immunity.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Diabetes Screening</h4>
-                    <div class="test-card-price">₹399</div>
-                    <p class="test-card-desc">Comprehensive diabetes screening including HbA1c and glucose levels.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-                <div class="test-card">
-                    <h4 class="test-card-title">Liver Function Test</h4>
-                    <div class="test-card-price">₹899</div>
-                    <p class="test-card-desc">Assess liver health and detect liver diseases or damage.</p>
-                    <a href="test-details.html" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="diagnostics.html" class="btn btn-primary">View All Tests</a>
             </div>
         </div>
     </section>
@@ -159,41 +88,28 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="grid grid-3">
+                <div>
                     <h4>Healithic</h4>
-                    <p>Your trusted partner in health and wellness. We provide accurate diagnostics and comprehensive health solutions.</p>
+                    <p>Your trusted partner in health.</p>
                 </div>
-                <div class="footer-section">
+                <div>
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="diagnostics.html">Diagnostics</a></li>
-                        <li><a href="packages.html">Health Packages</a></li>
-                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
+                <div>
                     <h4>Contact</h4>
-                    <ul>
-                        <li>📧 info@healithic.com</li>
-                        <li>📞 +91 9528280000</li>
-                        <li>📍 AIIMS DELHI</li>
-                    </ul>
+                    <p>info@healithic.com</p>
+                    <p>AIIMS DELHI</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Healithic. All rights reserved.</p>
-            </div>
+            <p class="text-center" style="margin-top: 20px;">&copy; 2025 Healithic.</p>
         </div>
     </footer>
+
 </body>
 </html>

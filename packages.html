@@ -2,30 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Packages - Healithic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=1100">
+    <title>Healithic - Health Packages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">Healithic</a>
-            <input type="checkbox" id="menu-toggle" class="mobile-menu-toggle">
-            <label for="menu-toggle" class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="nav-menu" id="nav-menu">
+            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="diagnostics.html" class="nav-link">Diagnostics</a></li>
                 <li><a href="packages.html" class="nav-link active">Packages</a></li>
-                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="how-it-works.html" class="nav-link">Process</a></li>
                 <li><a href="blogs.html" class="nav-link">Blogs</a></li>
                 <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -33,223 +25,52 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <header class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Health Packages</h1>
-                <p>Comprehensive health screening packages designed for your wellness journey</p>
-            </div>
+            <h1>Health Packages</h1>
+            <p>Comprehensive screening designed for your wellness.</p>
         </div>
-    </section>
+    </header>
 
-    <!-- Filters -->
-    <section class="section" style="padding-top: 40px;">
+    <section class="section">
         <div class="container">
-            <div class="filters">
-                <button class="filter-btn active">All Packages</button>
-                <button class="filter-btn">Basic</button>
-                <button class="filter-btn">Comprehensive</button>
-                <button class="filter-btn">Senior</button>
-                <button class="filter-btn">Women</button>
-                <button class="filter-btn">Men</button>
+            <div class="text-center" style="margin-bottom: 40px;">
+                <a href="#" class="btn btn-primary">All</a>
+                <a href="#" class="btn btn-outline">Basic</a>
+                <a href="#" class="btn btn-outline">Comprehensive</a>
+                <a href="#" class="btn btn-outline">Senior</a>
             </div>
-        </div>
-    </section>
 
-    <!-- Packages Grid -->
-    <section class="section" style="background-color: var(--warm-gray); padding-top: 20px;">
-        <div class="container">
             <div class="grid grid-3">
                 <div class="package-card">
-                    <span class="package-badge">Basic</span>
-                    <h3 class="card-title">Basic Health Checkup</h3>
-                    <div class="package-price">₹1,499 <span>₹2,000</span></div>
-                    <ul class="package-features">
-                        <li>Complete Blood Count (CBC)</li>
-                        <li>Blood Sugar (Fasting)</li>
-                        <li>Lipid Profile</li>
-                        <li>Complete Urine Analysis</li>
-                        <li>Liver Function Test</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
+                    <h3>Basic Checkup</h3>
+                    <div class="price">₹1,499 <span>₹2,000</span></div>
+                    <p>Includes CBC, Blood Sugar, Lipid Profile, Urine Analysis.</p>
+                    <a href="package-details.html" class="btn btn-primary">View Details</a>
                 </div>
 
                 <div class="package-card">
-                    <span class="package-badge">Popular</span>
-                    <h3 class="card-title">Comprehensive Health Package</h3>
-                    <div class="package-price">₹2,999 <span>₹4,500</span></div>
-                    <ul class="package-features">
-                        <li>Complete Blood Count (CBC)</li>
-                        <li>Lipid Profile</li>
-                        <li>Liver Function Test</li>
-                        <li>Kidney Function Test</li>
-                        <li>Thyroid Function Test</li>
-                        <li>Diabetes Screening</li>
-                        <li>Vitamin D Test</li>
-                        <li>Complete Urine Analysis</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
+                    <h3>Comprehensive Package</h3>
+                    <div class="price">₹2,999 <span>₹4,500</span></div>
+                    <p>Includes CBC, Lipid, Liver, Kidney, Thyroid, Vitamin D.</p>
+                    <a href="package-details.html" class="btn btn-primary">View Details</a>
                 </div>
 
                 <div class="package-card">
-                    <span class="package-badge">Premium</span>
-                    <h3 class="card-title">Executive Health Package</h3>
-                    <div class="package-price">₹4,999 <span>₹7,500</span></div>
-                    <ul class="package-features">
-                        <li>Complete Blood Count (CBC)</li>
-                        <li>Comprehensive Lipid Profile</li>
-                        <li>Liver Function Test</li>
-                        <li>Kidney Function Test</li>
-                        <li>Thyroid Function Test</li>
-                        <li>Diabetes Screening (HbA1c)</li>
-                        <li>Vitamin D & B12</li>
-                        <li>Iron Studies</li>
-                        <li>Calcium & Electrolytes</li>
-                        <li>Complete Urine Analysis</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
-                </div>
-
-                <div class="package-card">
-                    <span class="package-badge">Women</span>
-                    <h3 class="card-title">Women's Wellness Package</h3>
-                    <div class="package-price">₹3,499 <span>₹5,200</span></div>
-                    <ul class="package-features">
-                        <li>Complete Blood Count (CBC)</li>
-                        <li>Lipid Profile</li>
-                        <li>Thyroid Function Test</li>
-                        <li>Vitamin D Test</li>
-                        <li>Iron Studies</li>
-                        <li>Calcium Test</li>
-                        <li>Complete Urine Analysis</li>
-                        <li>Pap Smear (if applicable)</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
-                </div>
-
-                <div class="package-card">
-                    <span class="package-badge">Men</span>
-                    <h3 class="card-title">Men's Health Package</h3>
-                    <div class="package-price">₹3,999 <span>₹6,000</span></div>
-                    <ul class="package-features">
-                        <li>Complete Blood Count (CBC)</li>
-                        <li>Lipid Profile</li>
-                        <li>Liver Function Test</li>
-                        <li>Kidney Function Test</li>
-                        <li>PSA Test</li>
-                        <li>Testosterone Level</li>
-                        <li>Vitamin D Test</li>
-                        <li>Complete Urine Analysis</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
-                </div>
-
-                <div class="package-card">
-                    <span class="package-badge">Senior</span>
-                    <h3 class="card-title">Senior Citizen Package</h3>
-                    <div class="package-price">₹3,299 <span>₹5,000</span></div>
-                    <ul class="package-features">
-                        <li>Complete Blood Count (CBC)</li>
-                        <li>Comprehensive Lipid Profile</li>
-                        <li>Liver Function Test</li>
-                        <li>Kidney Function Test</li>
-                        <li>Thyroid Function Test</li>
-                        <li>Diabetes Screening</li>
-                        <li>Vitamin D & B12</li>
-                        <li>Calcium Test</li>
-                        <li>Complete Urine Analysis</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
-                </div>
-
-                <div class="package-card">
-                    <span class="package-badge">Diabetes</span>
-                    <h3 class="card-title">Diabetes Care Package</h3>
-                    <div class="package-price">₹1,999 <span>₹3,000</span></div>
-                    <ul class="package-features">
-                        <li>HbA1c Test</li>
-                        <li>Fasting Blood Sugar</li>
-                        <li>Postprandial Blood Sugar</li>
-                        <li>Lipid Profile</li>
-                        <li>Kidney Function Test</li>
-                        <li>Complete Urine Analysis</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
-                </div>
-
-                <div class="package-card">
-                    <span class="package-badge">Cardiac</span>
-                    <h3 class="card-title">Heart Health Package</h3>
-                    <div class="package-price">₹2,499 <span>₹3,800</span></div>
-                    <ul class="package-features">
-                        <li>Complete Blood Count (CBC)</li>
-                        <li>Comprehensive Lipid Profile</li>
-                        <li>C-Reactive Protein (CRP)</li>
-                        <li>Homocysteine</li>
-                        <li>Electrocardiogram (ECG)</li>
-                        <li>Liver Function Test</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
-                </div>
-
-                <div class="package-card">
-                    <span class="package-badge">Weight Loss</span>
-                    <h3 class="card-title">Weight Management Package</h3>
-                    <div class="package-price">₹2,799 <span>₹4,200</span></div>
-                    <ul class="package-features">
-                        <li>Complete Blood Count (CBC)</li>
-                        <li>Lipid Profile</li>
-                        <li>Thyroid Function Test</li>
-                        <li>Diabetes Screening</li>
-                        <li>Vitamin D Test</li>
-                        <li>Liver Function Test</li>
-                        <li>Kidney Function Test</li>
-                    </ul>
-                    <a href="package-details.html" class="btn btn-primary" style="width: 100%;">View Details</a>
+                    <h3>Executive Package</h3>
+                    <div class="price">₹4,999 <span>₹7,500</span></div>
+                    <p>Full body checkup including Iron Studies and B12.</p>
+                    <a href="package-details.html" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Healithic</h4>
-                    <p>Your trusted partner in health and wellness. We provide accurate diagnostics and comprehensive health solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="diagnostics.html">Diagnostics</a></li>
-                        <li><a href="packages.html">Health Packages</a></li>
-                        <li><a href="how-it-works.html">How It Works</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📧 info@healithic.com</li>
-                        <li>📞 +91 9528280000</li>
-                        <li>📍 AIIMS DELHI</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Healithic. All rights reserved.</p>
-            </div>
+        <div class="container text-center">
+            &copy; 2025 Healithic.
         </div>
     </footer>
+
 </body>
 </html>
