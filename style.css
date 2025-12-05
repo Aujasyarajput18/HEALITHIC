@@ -227,6 +227,30 @@ img { max-width: 100%; display: block; }
     background-color: #ffebee;
 }
 
+/* Fade-in Animation Styles */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible,
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stat item styling for counter */
+.stat-item {
+    transition: transform 0.3s ease;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 { font-size: 2rem; }

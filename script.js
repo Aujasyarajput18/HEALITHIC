@@ -124,3 +124,143 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Number Counter Animation
+function animateCounter(element) {
+    var target = parseInt(element.getAttribute('data-target'));
+    var suffix = element.getAttribute('data-suffix') || '';
+    var duration = 2000; // 2 seconds
+    var increment = target / (duration / 16); // 60fps
+    var current = 0;
+    
+    var timer = setInterval(function() {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        
+        // Format number with commas
+        var displayValue = Math.floor(current).toLocaleString();
+        element.textContent = displayValue + suffix;
+    }, 16);
+}
+
+// Check if element is in viewport
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Initialize counter animation when page loads (only on index.html)
+document.addEventListener('DOMContentLoaded', function() {
+    var counters = document.querySelectorAll('.counter');
+    var hasAnimated = false;
+    
+    if (counters.length > 0) {
+        // Check if counters are already visible
+        var firstCounter = counters[0];
+        if (firstCounter && isInViewport(firstCounter.parentElement)) {
+            for (var i = 0; i < counters.length; i++) {
+                animateCounter(counters[i]);
+            }
+            hasAnimated = true;
+        }
+        
+        // If not visible, wait for scroll
+        if (!hasAnimated) {
+            window.addEventListener('scroll', function() {
+                if (!hasAnimated) {
+                    for (var i = 0; i < counters.length; i++) {
+                        var counter = counters[i];
+                        if (isInViewport(counter.parentElement)) {
+                            animateCounter(counter);
+                            hasAnimated = true;
+                        }
+                    }
+                }
+            });
+        }
+    }
+});
+
+// Fade-in animation on scroll
+document.addEventListener('DOMContentLoaded', function() {
+    var fadeElements = document.querySelectorAll('.fade-in, .fade-in-up');
+    
+    function checkFadeElements() {
+        for (var i = 0; i < fadeElements.length; i++) {
+            var element = fadeElements[i];
+            if (isInViewport(element) && !element.classList.contains('visible')) {
+                element.classList.add('visible');
+            }
+        }
+    }
+    
+    // Check on load
+    checkFadeElements();
+    
+    // Check on scroll
+    window.addEventListener('scroll', checkFadeElements);
+});
+
+// Button hover effect - scale animation
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.btn');
+    
+    for (var i = 0; i < buttons.length; i++) {
+        var btn = buttons[i];
+        
+        btn.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.05)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        
+        btn.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+        });
+    }
+});
+
+// Card hover effect - lift animation
+document.addEventListener('DOMContentLoaded', function() {
+    var cards = document.querySelectorAll('.card');
+    
+    for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+            this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '';
+        });
+    }
+});
+
+// Hero text fade-in on page load
+document.addEventListener('DOMContentLoaded', function() {
+    var heroElements = document.querySelectorAll('.hero h1, .hero p, .hero .btn');
+    
+    for (var i = 0; i < heroElements.length; i++) {
+        heroElements[i].style.opacity = '0';
+        heroElements[i].style.transform = 'translateY(20px)';
+        heroElements[i].style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        
+        setTimeout(function(index) {
+            return function() {
+                heroElements[index].style.opacity = '1';
+                heroElements[index].style.transform = 'translateY(0)';
+            };
+        }(i), i * 200);
+    }
+});
+
