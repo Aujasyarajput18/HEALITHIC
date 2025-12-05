@@ -227,6 +227,15 @@ img { max-width: 100%; display: block; }
     background-color: #ffebee;
 }
 
+/* Error Message Styling */
+.error-message {
+    display: none;
+    color: #d32f2f;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
 /* Fade-in Animation Styles */
 .fade-in {
     opacity: 0;

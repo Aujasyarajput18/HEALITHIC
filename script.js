@@ -45,6 +45,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Show error message
+function showError(inputId, errorId, message) {
+    var input = document.getElementById(inputId);
+    var errorElement = document.getElementById(errorId);
+    
+    if (input && errorElement) {
+        input.classList.add('error');
+        errorElement.textContent = message;
+        errorElement.style.display = 'block';
+    }
+}
+
+// Hide error message
+function hideError(inputId, errorId) {
+    var input = document.getElementById(inputId);
+    var errorElement = document.getElementById(errorId);
+    
+    if (input && errorElement) {
+        input.classList.remove('error');
+        errorElement.textContent = '';
+        errorElement.style.display = 'none';
+    }
+}
+
 // Form Validation
 function validateForm(form) {
     var inputs = form.querySelectorAll('input[required], textarea[required]');
@@ -55,6 +79,11 @@ function validateForm(form) {
         
         // Remove previous error styling
         input.classList.remove('error');
+        
+        // Hide error messages
+        if (input.id === 'email-input') {
+            hideError('email-input', 'email-error');
+        }
         
         // Check if empty
         if (!input.value.trim()) {
@@ -67,13 +96,20 @@ function validateForm(form) {
             var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(input.value)) {
                 input.classList.add('error');
+                showError('email-input', 'email-error', 'Please enter a valid email address (e.g., example@email.com)');
                 isValid = false;
+            } else {
+                hideError('email-input', 'email-error');
             }
         }
     }
     
     if (!isValid) {
-        alert('Please fill in all required fields correctly.');
+        // Don't show alert if email error is already shown
+        var emailError = document.getElementById('email-error');
+        if (!emailError || emailError.style.display === 'none') {
+            alert('Please fill in all required fields correctly.');
+        }
     }
     
     return isValid;
@@ -82,6 +118,34 @@ function validateForm(form) {
 // Add form validation to contact form
 document.addEventListener('DOMContentLoaded', function() {
     var contactForm = document.querySelector('form');
+    var emailInput = document.getElementById('email-input');
+    
+    // Real-time email validation as user types
+    if (emailInput) {
+        emailInput.addEventListener('blur', function() {
+            var value = this.value.trim();
+            if (value) {
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(value)) {
+                    showError('email-input', 'email-error', 'Please enter a valid email address (e.g., example@email.com)');
+                } else {
+                    hideError('email-input', 'email-error');
+                }
+            } else {
+                hideError('email-input', 'email-error');
+            }
+        });
+        
+        emailInput.addEventListener('input', function() {
+            var value = this.value.trim();
+            if (value) {
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (emailPattern.test(value)) {
+                    hideError('email-input', 'email-error');
+                }
+            }
+        });
+    }
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -89,6 +153,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (validateForm(this)) {
                 alert('Thank you! Your message has been sent.');
                 this.reset();
+                // Hide all error messages after reset
+                hideError('email-input', 'email-error');
             }
         });
     }
